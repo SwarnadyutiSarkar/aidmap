@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-10-22T18:02:33Z",
+  "is_sample": true,
+  "region": {
+    "name": "South Sudan",
+    "bbox": [
+      3.3,
+      23.4,
+      12.4,
+      36.0
+    ]
+  },
+  "sources": [
+    {
+      "id": "healthsites",
+      "label": "Health facilities",
+      "category": "health",
+      "title": "SAMPLE (synthetic) Health facilities: NOT REAL DATA",
+      "url": "https://data.humdata.org",
+      "organization": "Synthetic test data",
+      "license": "n/a",
+      "coverage_end": "2026-10-22",
+      "last_modified": "2026-10-22",
+      "update_frequency_days": null,
+      "age_days": 0,
+      "resource": null,
+      "resource_format": null,
+      "caveats": null,
+      "counts": {
+        "raw": 72,
+        "flag_no_name": 7,
+        "flag_low_precision": 6,
+        "quality_poor": 1,
+        "published": 71,
+        "quality_good": 58,
+        "quality_check": 12,
+        "flag_possible_duplicate": 1,
+        "dropped_zero_coordinates": 1
+      },
+      "warnings": [
+        "Synthetic data for testing the app. Do not use for decisions."
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "waterpoints",
+      "label": "Water points",
+      "category": "water",
+      "title": "SAMPLE (synthetic) Water points: NOT REAL DATA",
+      "url": "https://data.humdata.org",
+      "organization": "Synthetic test data",
+      "license": "n/a",
+      "coverage_end": "2026-10-22",
+      "last_modified": "2026-10-22",
+      "update_frequency_days": null,
+      "age_days": 0,
+      "resource": null,
+      "resource_format": null,
+      "caveats": null,
+      "counts": {
+        "raw": 72,
+        "flag_no_name": 7,
+        "flag_low_precision": 6,
+        "quality_poor": 1,
+        "published": 71,
+        "quality_good": 58,
+        "quality_check": 12,
+        "flag_possible_duplicate": 1,
+        "dropped_zero_coordinates": 1
+      },
+      "warnings": [
+        "Synthetic data for testing the app. Do not use for decisions."
+      ],
+      "status": "ok"
+    }
+  ],
+  "total_points": 142,
+  "notes": [
+    "A missing point does not mean a missing service: it may simply be missing from the data.",
+    "Locations are straight-line positions as published; AidMap does not know road access or security.",
+    "Records mentioning protection, shelter-for-survivors, security-force or similar sensitive sites are excluded, and no personal data is published."
+  ]
+}

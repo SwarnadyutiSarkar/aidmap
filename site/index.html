@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AidMap: humanitarian service coverage explorer</title>
+  <meta name="description" content="Map of public health facilities and water points with source dates and data-quality warnings.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="panel">
+    <header>
+      <h1>AidMap</h1>
+      <p id="subtitle">Loading…</p>
+    </header>
+
+    <div id="banners"></div>
+
+    <section>
+      <h2>Show</h2>
+      <div id="cats"></div>
+      <label class="row">Type
+        <select id="kind"><option value="">All types</option></select>
+      </label>
+      <label class="row">Search name
+        <input id="search" type="search" placeholder="e.g. Juba" autocomplete="off">
+      </label>
+      <label class="check"><input id="hideFlagged" type="checkbox"> Hide records with quality warnings</label>
+      <label class="check"><input id="grid" type="checkbox"> Show record density (~25 km cells)</label>
+      <p id="count" class="muted" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>Nearest services</h2>
+      <button id="nearBtn" type="button">Pick a point on the map</button>
+      <div id="nearest" aria-live="polite"></div>
+    </section>
+
+    <section>
+      <h2>Data sources &amp; quality</h2>
+      <div id="sources"></div>
+    </section>
+
+    <section>
+      <h2>Read this first</h2>
+      <ul id="notes" class="notes"></ul>
+      <p class="muted">Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>.
+        Data from the <a href="https://data.humdata.org" target="_blank" rel="noopener">Humanitarian Data Exchange</a>,
+        reused under each dataset's own licence (see source cards). Not an official source; not for emergency dispatch.</p>
+    </section>
+  </aside>
+  <main id="map" aria-label="Map of aid locations"></main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "region": {
+    "name": "South Sudan",
+    "iso3": "SSD",
+    "bbox": [3.3, 23.4, 12.4, 36.0],
+    "bbox_comment": "[min_lat, min_lon, max_lat, max_lon]. Points outside are dropped (usually coordinate errors)."
+  },
+  "sources": [
+    {
+      "id": "healthsites",
+      "category": "health",
+      "label": "Health facilities",
+      "dataset": "e3184d68-b883-4fc4-b06a-cf2e5cfd7d69",
+      "search": "South Sudan healthsites",
+      "match_words": ["south", "sudan", "healthsites", "health"],
+      "prefer_formats": ["geojson", "csv", "json", "zip"]
+    },
+    {
+      "id": "waterpoints",
+      "category": "water",
+      "label": "Water points",
+      "dataset": null,
+      "search": "South Sudan waterpoints",
+      "match_words": ["south", "sudan", "waterpoints", "water"],
+      "prefer_formats": ["geojson", "csv", "json", "zip"]
+    }
+  ]
+}
